@@ -45,13 +45,13 @@ export default class Tabbar extends Component {
     rippleColor: "green",
     rippleDuration: 280,
 
-    tabbarBgColor: "#eee",
+    tabbarBgColor: "#16394f",
     tabbarBorderTopColor: null,
-    iconColor: "#444",
-    selectedIconColor: "green",
+    iconColor: "#ccc",
+    selectedIconColor: "#fff",
     labelSize: 12,
-    labelColor: "#444",
-    selectedLabelColor: "green",
+    labelColor: "#ccc",
+    selectedLabelColor: "#fff",
     badgeColor: "#dd463b",
     badgeLabelColor: "#fff",
     badgeLabelSize: 11

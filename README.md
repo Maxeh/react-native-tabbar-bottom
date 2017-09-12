@@ -9,7 +9,8 @@ This package provides a bottom tabbar for your react native app.
 
 ### Demo
 
-
+![Demo1](https://raw.githubusercontent.com/Maxeh/markdown/48e95b3050d1a54a8d9678866a98de6cfd077b9a/react-native-tabbar-bottom/demo1.gif)
+![Demo2](https://raw.githubusercontent.com/Maxeh/markdown/48e95b3050d1a54a8d9678866a98de6cfd077b9a/react-native-tabbar-bottom/demo3.gif))
 
 ### Props
 | Prop        | Type           | Options | Default  | Info

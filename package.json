@@ -1,6 +1,6 @@
 {
   "name": "react-native-tabbar-bottom",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tabbar component for react native apps",
   "main": "index.js",
   "author": "Maximilian Ehbauer",

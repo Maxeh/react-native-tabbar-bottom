@@ -1,0 +1,23 @@
+{
+  "name": "react-native-tabbar-bottom",
+  "version": "1.0.0",
+  "description": "Tabbar component for react native apps",
+  "main": "index.js",
+  "author": "Maximilian Ehbauer",
+  "license": "MIT",
+  "dependencies": {
+    "react-native-material-ripple": "0.7.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Maxeh/react-native-tabbar-bottom.git"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "react-native",
+    "tabbar",
+    "bottom",
+	"badge"
+  ],
+}

@@ -1,5 +1,5 @@
 # react-native-tabbar-bottom
-Support: Android / iOS  
+Support: Android / iOS
 
 This package provides a bottom tabbar for your react native app. 
 
@@ -29,7 +29,7 @@ This package provides a bottom tabbar for your react native app.
 | badgeLabelColor | PropTypes.string |   | "#fff" | 
 | badgeLabelSize | PropTypes.number |   | 11 | 
 | badgeColor | PropTypes.string |   | "#dd463b" | 
-| stateFunc | PropTypes.func.isRequired |   |  | Required. Pass in function to update state. 
+| stateFunc | PropTypes.func.isRequired |   |  | Required. Pass in function to update state. Format: (tab) => {..}
 | activePage | PropTypes.string.isRequired |   |  | Required. Pass in active page.
 | tabs | PropTypes.arrayOf |   |  | Required. Pass in tab data
 
@@ -47,4 +47,70 @@ This package provides a bottom tabbar for your react native app.
 
 ### Example code
 
+```
+[...]
+import Tabbar from 'react-native-tabbar-bottom'
 
+export default class exampleTabs extends Component {
+  constructor() {
+    super()
+    this.state = {
+      page: "HomeScreen",
+    }
+  }
+
+  render() {
+    return (
+      <View style={styles.container}>
+        {
+          // if you are using react-navigation just pass the navigation object in your components like this:
+          // {this.state.page === "HomeScreen" && <MyComp navigation={this.props.navigation}>Screen1</MyComp>}
+        }
+        {this.state.page === "HomeScreen" && <Text>Screen1</Text>}
+        {this.state.page === "NotificationScreen" && <Text>Screen2</Text>}
+        {this.state.page === "ProfileScreen" && <Text>Screen3</Text>}
+        {this.state.page === "ChatScreen" && <Text>Screen4</Text>}
+        {this.state.page === "SearchScreen" && <Text>Screen5</Text>}
+
+        <Tabbar
+          stateFunc={(tab) => {
+            this.setState({page: tab.page})
+            //this.props.navigation.setParams({tabTitle: tab.title})
+          }}
+          activePage={this.state.page}
+          tabs={[
+            {
+              page: "HomeScreen",
+              icon: "home",
+            },
+            {
+              page: "NotificationScreen",
+              icon: "notifications",
+              badgeNumber: 11,
+            },
+            {
+              page: "ProfileScreen",
+              icon: "person",
+            },
+            {
+              page: "ChatScreen",
+              icon: "chatbubbles",
+              badgeNumber: 7,
+            },
+            {
+              page: "SearchScreen",
+              icon: "search",
+            },
+          ]}
+        />
+      </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  }
+});
+```

@@ -47,6 +47,8 @@ This package provides a bottom tabbar for your react native app.
 
 ### Example code
 
+You can also find this example in the example folder.
+
 ```
 [...]
 import Tabbar from 'react-native-tabbar-bottom'

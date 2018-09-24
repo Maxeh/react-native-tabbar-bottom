@@ -29,7 +29,7 @@ export default class Tabbar extends Component {
       PropTypes.shape({
         page: PropTypes.string,
         title: PropTypes.string,
-        icon: PropTypes.string,
+        icon: PropTypes.object,
         iconText: PropTypes.string,
         badgeColor: PropTypes.string,
         badgeLabelColor: PropTypes.string,

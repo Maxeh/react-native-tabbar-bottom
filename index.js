@@ -29,7 +29,7 @@ export default class Tabbar extends Component {
       PropTypes.shape({
         page: PropTypes.string,
         title: PropTypes.string,
-        icon: PropTypes.string,
+        icon: PropTypes.object,
         iconText: PropTypes.string,
         badgeColor: PropTypes.string,
         badgeLabelColor: PropTypes.string,
@@ -146,7 +146,10 @@ export default class Tabbar extends Component {
                 style={styles.tabButton}
               >
                 <View style={styles.iconAndBadge}>
-                  <Icon style={_getIconStyle(tab)} name={tab.icon}/>
+                  {/** example
+                    * @param icon : <Image source={...}> || <Icon name="..."/>
+                    */}
+                  {tab.icon} 
                   {_renderBadge(tab)}
                 </View>
                 {_renderIconText(tab)}
@@ -168,7 +171,10 @@ export default class Tabbar extends Component {
                 onPressOut={() => this.props.stateFunc(tab)}
               >
                 <View style={styles.iconAndBadge}>
-                  <Icon style={_getIconStyle(tab)} name={tab.icon}/>
+                  {/** example
+                    * @param icon : <Image source={...}> || <Icon name="..."/>
+                    */}
+                  {tab.icon} 
                   {_renderBadge(tab)}
                 </View>
 

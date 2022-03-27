@@ -1,4 +1,4 @@
-# react-native-tabbar-bottom
+# DEPRECATED - react-native-tabbar-bottom
 
 
 

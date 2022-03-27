@@ -1,4 +1,17 @@
 # react-native-tabbar-bottom
+
+
+
+-------------------------------------
+
+DEPRECATED - NOT MAINTAINED ANYMORE.
+
+DO NOT USE FOR NEW PROJECTS.
+
+-------------------------------------
+
+
+
 Support: Android / iOS
 
 This package provides a bottom tabbar for your react native app. 
